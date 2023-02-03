@@ -74,6 +74,7 @@ const Game: FC = () => {
 
     return (
         <div className="Game">
+            <h1>Bet and win Sol</h1>
             <input type="number" placeholder="Bet" onChange={e => setBet(Number(e.target.value))}/>
             <input type="number" placeholder="Guess..." onChange={e => setGuess(Number(e.target.value))}/>
             <button onClick={() => roll()}>Play</button>

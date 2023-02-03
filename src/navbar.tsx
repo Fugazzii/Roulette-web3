@@ -25,7 +25,7 @@ export default function Navbar() {
 
     return (
         <nav>
-            {publicKey ? (<div>Balance: {_BALANCE}SOL</div>) : <></>}
+            {publicKey ? (<div className="balance">Balance: {_BALANCE} SOL</div>) : <></>}
             <WalletMultiButton />
         </nav>
     );
