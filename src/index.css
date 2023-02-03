@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right bottom, rgb(0, 255, 163), rgb(220, 31, 255, 1));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+#root {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+.wallet-adapter-dropdown-list, .wallet-adapter-dropdown-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.wallet-adapter-dropdown-list {
+    width: 100%;
+}
+
+.wallet-adapter-dropdown-list li, .wallet-adapter-button {
+    list-style: none;
+    background-color: indigo;
+    color: white;
+    width: 8rem;
+    height: 4rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.wallet-adapter-dropdown-list li:hover, .wallet-adapter-button:hover {
+    background-color: rgb(113, 47, 255);
+}
+
+.wallet-adapter-button-start-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.wallet-adapter-button {
+    width: 15rem;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.wallet-adapter-button span {
+    display: none;
+}
+
+.wallet-adapter-modal-list-more {
+    background: indigo;
+    border: none;
+    color: white;
+    width: 15rem;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.wallet-adapter-modal-title, .wallet-adapter-modal-button-close {
+    display: none;
+}
+
+.wallet-adapter-dropdown {
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Game {
+    bottom: -5rem;
+    width: 50%;
+    height: 30rem;
+    border-radius: 5%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Game input {
+    width: 12rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+    background-color: white;
+}
+
+.Game button {
+    width: 4rem;
+    height: 2rem;
+    background-color: indigo;
+    color: white;
+    border: none;
+}
+
+.Game button:hover {
+    background-color: rgb(87, 0, 149);
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
