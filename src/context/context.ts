@@ -10,3 +10,8 @@ export const ANIMATION: RecoilState<boolean> = atom({
     key: 'animation',
     default: false
 });
+
+export const IS_AUTHED: RecoilState<boolean> = atom({
+    key: 'auth',
+    default: false
+})

@@ -5,7 +5,7 @@ import { useFrame } from "@react-three/fiber";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
 import { useRecoilValue } from 'recoil';
-import { ANIMATION } from './context';
+import { ANIMATION } from '../context/context';
 import { Clock } from 'three';
 
 export default function Scene() {
@@ -35,7 +35,7 @@ export default function Scene() {
             rotation={[ Math.PI / 4, 0, 0 ]} 
             position={[0, 2, 0]} 
             object={board.scene} 
-            scale={1.5}
+            scale={1.4}
             />
     }
 

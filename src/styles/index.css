@@ -133,14 +133,16 @@ nav {
 .Game button {
     width: 8rem;
     height: 3rem;
-    background-color: indigo;
+    background: linear-gradient(to right, rgb(3, 225, 255, 0.3), rgb(87, 0, 149, 1));
     color: white;
     border: none;
     border-radius: 1rem;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
 }
 
 .Game button:hover {
-    background-color: rgb(87, 0, 149);
+    opacity: 1;
 }
 
 main {
@@ -166,5 +168,33 @@ main {
     transition: 0.2s ease-in-out;
 }
 .balance:hover {
+    opacity: 1;
+}
+
+.input-field {
+    display: inline-flex;
+}
+
+.input-field button {
+    border-radius: 0.5rem;
+    margin: 0 0.25rem 0 0.25rem;
+    width: 5.5rem;
+    height: 3rem;
+    opacity: 0.8;
+}
+
+.input-field .inc {
+    background: green;
+}
+.input-field .inc:hover {
+    background: green;
+    opacity: 1;
+}
+
+.input-field .dec {
+    background: darkred;
+}
+.input-field .dec:hover {
+    background: darkred;
     opacity: 1;
 }
